@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.jumbotron{
+    background: url("http://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg") no-repeat 50% 50% fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    height: 600px;
+}
+ul{
+    margin:0;
+    padding:20px 90px;
+    background-color: #666;
+}
+
+
+ul li{
+    padding-right:40px;
+    display: inline;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+header{
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+header h1{
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 90px;
+
+}
+button{
+    margin-top:30px;
+    padding:15px 20px;
+    background-color: #333;
+    border:none;
+    font-weight: 400;
+    font-size: 20px;
+    color:whitesmoke;
+
+
+
+}
+.col{
+    /*border: 1px solid grey;*/
+    margin:30px auto;
+    float:left;
+    width:33%;
+    text-align: center;
+    overflow: hidden;
+
+}
+svg{
+    /*border: 1px solid grey;*/
+    margin:auto;
+    width:50px;
+    height:30px;
+}
+.supporting{
+
+    width:90%;
+    max-width: 900px;
+    height: auto;
+    margin:0 auto;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.col p{
+    padding:0 20px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.btn
+{
+    margin:auto;
+    width:100px;
+    padding:10px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #333;
+
+}
+footer{
+
+
+    padding:30px 90px;
+    background-color: #555;
+    color:white
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 60px;
+        padding: 20px 40px;
+    }
+
+    .supporting .col {
+        width: 100%;
+    }
+    ul li {
+        padding-right: 20px;
+    }
+}
