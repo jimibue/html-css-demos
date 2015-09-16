@@ -2,7 +2,7 @@ html{
     background-color: #ddd;
 }
 body{
-    margin-top: 3%;
+
     font-family: 'Raleway', sans-serif;
 }
 a{
@@ -10,9 +10,9 @@ a{
     color:#eee;
 }
 #main-header{
-    background: url("http://www.frogsign.net/wp-content/uploads/2015/03/trianglify-background-1.png")no-repeat center center;
+    background: url("http://www.frogsign.net/wp-content/uploads/2015/03/trianglify-background-1.png")no-repeat center center fixed;
     background-size: cover;
-    height: 80vh;
+    height: 90vh;
 
 }
 .container{
@@ -122,6 +122,30 @@ svg{
     font-size: 14px;
 }
 
+.menu{
+    height: 600px;
+    width:70%;
+    min-width: 500px;
+    max-width: 800px;
+    /*border:1px solid grey;*/
+    margin:40px auto;
+}
+.menu-col
+{
+    box-sizing: border-box;
+    border:1px solid grey;
+    width:100%;
+    margin-bottom: 20px;
+    height:300px;
+    position: relative;
+
+}
+.more
+{
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+}
 @media (max-width: 500px) {
     #main-nav ul  {
         justify-content: space-around;
