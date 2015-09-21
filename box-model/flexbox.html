@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="flexbox.css"/>
+</head>
+<body>
+<div class="ex">display:flex</div>
+<div id="flexcont1" class="flex">
+  <div class="item1">1</div>
+  <div class="item1">2</div>
+  <div class="item1">3</div>
+  <div class="item1">4</div>
+  <div class="item1">5</div>
+</div>
+
+<div class="ex">display:flex-direction: row-reverse</div>
+<div id="flexcont2" class="flex">
+  <div class="item1">1</div>
+  <div class="item1">2</div>
+  <div class="item1">3</div>
+  <div class="item1">4</div>
+  <div class="item1">5</div>
+</div>
+
+<div class="ex">display:flex-direction-column</div>
+<div id="flexcont3" class="flex">
+  <div class="item1">1</div>
+  <div class="item1">2</div>
+  <div class="item1">3</div>
+  <div class="item1">4</div>
+  <div class="item1">5</div>
+</div>
+<div class="ex">By default ('nowrap') children item will stay on one row and
+  fill parent, to make items go on new row use (items 75% width)
+  <br/>display:flex no-wrap</div>
+<div id="flexcont4" class="flex">
+  <div class="item1 big">1</div>
+  <div class="item1 big">2</div>
+  <div class="item1 big">3</div>
+  <div class="item1 big">4</div>
+  <div class="item1 big">5</div>
+</div>
+<br/>flex-wrap: wrap (items 75% width)</div>
+<div id="flexcont5" class="flex">
+  <div class="item1 big">1</div>
+  <div class="item1 big">2</div>
+  <div class="item1 big">3</div>
+  <div class="item1 big">4</div>
+  <div class="item1 big">5</div>
+</div>
+
+
+<div class="ex">JUSTIFY CONTENT
+  <br/>justify-content:flex-start(default)</div>
+
+<div id="flexcont6" class="flex">
+  <div class="item1 mid">1</div>
+  <div class="item1 mid">2</div>
+  <div class="item1 mid">3</div>
+  <div class="item1 mid">4</div>
+  <div class="item1 mid">5</div>
+</div>
+<div class="ex">
+  <br/>justify-content:flex-end</div>
+
+<div id="flexcont7" class="flex">
+  <div class="item1 mid">1</div>
+  <div class="item1 mid">2</div>
+  <div class="item1 mid">3</div>
+  <div class="item1 mid">4</div>
+  <div class="item1 mid">5</div>
+</div>
+<div class="ex">
+  <br/>justify-content:center</div>
+<div id="flexcont8" class="flex">
+  <div class="item1 mid">1</div>
+  <div class="item1 mid">2</div>
+  <div class="item1 mid">3</div>
+  <div class="item1 mid">4</div>
+  <div class="item1 mid">5</div>
+</div>
+
+<div class="ex">
+  <br/>justify-content:space-between</div>
+<div id="flexcont9" class="flex">
+  <div class="item1 mid">1</div>
+  <div class="item1 mid">2</div>
+  <div class="item1 mid">3</div>
+  <div class="item1 mid">4</div>
+  <div class="item1 mid">5</div>
+</div>
+
+<div class="ex">
+  <br/>justify-content:space-between</div>
+<div id="flexcont10" class="flex">
+  <div class="item1 mid">1</div>
+  <div class="item1 mid">2</div>
+  <div class="item1 mid">3</div>
+  <div class="item1 mid">4</div>
+  <div class="item1 mid">5</div>
+</div>
+
+<div class="ex">ALIGN ITEMS -dealing with the Y axis
+  <br/>align items</div>
+<div class="ex">
+  <br/>align-items: flex-start(default)</div>
+<div id="flexcont11" class="flex tall">
+  <div class="item1 mid">1</div>
+  <div class="item1 mid">2</div>
+  <div class="item1 mid">3</div>
+  <div class="item1 mid">4</div>
+  <div class="item1 mid">5</div>
+</div>
+
+<div class="ex">
+  <br/>align-items: flex-end</div>
+<div id="flexcont12" class="flex tall">
+  <div class="item1 mid">1</div>
+  <div class="item1 mid">2</div>
+  <div class="item1 mid">3</div>
+  <div class="item1 mid">4</div>
+  <div class="item1 mid">5</div>
+</div>
+
+<div class="ex">
+  <br/>align-items: center</div>
+<div id="flexcont13" class="flex tall">
+  <div class="item1 mid">1</div>
+  <div class="item1 mid">2</div>
+  <div class="item1 mid">3</div>
+  <div class="item1 mid">4</div>
+  <div class="item1 mid">5</div>
+</div>
+
+<div class="ex">
+  <br/>align-items: stretch (items no assigned height)</div>
+<div id="flexcont14" class="flex tall">
+  <div class="item2 mid">1</div>
+  <div class="item2 mid">2</div>
+  <div class="item2 mid">3</div>
+  <div class="item2 mid">4</div>
+  <div class="item2 mid">5</div>
+</div>
+<div class="ex">
+  <br/>align-items: baseline</div>
+<div id="flexcont15" class="flex tall">
+  <div class="item2 mid">1</div>
+  <div class="item2 mid">2</div>
+  <div id="font" class="item2 mid">3</div>
+  <div class="item2 mid">4</div>
+  <div class="item2 mid">5</div>
+</div>
+
+<div class="ex">ALIGN CONTENT -is much like align items but differs
+  in how things are affected when things wrap, so flex-wrap must be set to wrap
+  <br/>align-content: stretch (default) (items have no height width 25%)</div>
+<div class="ex">
+  <div id="flexcont16" class="flex tall">
+    <div class="item2 wrap">1</div>
+    <div class="item2 wrap">2</div>
+    <div class="item2 wrap">3</div>
+    <div class="item2 wrap">4</div>
+    <div class="item2 wrap">5</div>
+  </div>
+</div>
+
+<div class="ex">
+  <br/>align-content: center (default) (items have no height width 25%)</div>
+<div class="ex">
+  <div id="flexcont17" class="flex tall">
+    <div class="item2 wrap">1</div>
+    <div class="item2 wrap">2</div>
+    <div class="item2 wrap">3</div>
+    <div class="item2 wrap">4</div>
+    <div class="item2 wrap">5</div>
+  </div>
+</div>
+
+<div class="ex">
+  <br/>align-content: center (default) (items have no height width 25%)</div>
+<div class="ex">
+  <div id="flexcont18" class="flex tall">
+    <div class="item2 wrap">1</div>
+    <div class="item2 wrap">2</div>
+    <div class="item2 wrap">3</div>
+    <div class="item2 wrap">4</div>
+    <div class="item2 wrap">5</div>
+  </div>
+</div>
+
+<div class="ex">
+  <br/>align-content: flex-end (default) (items have no height width 25%)</div>
+<div class="ex">
+  <div id="flexcont19" class="flex tall">
+    <div class="item2 wrap">1</div>
+    <div class="item2 wrap">2</div>
+    <div class="item2 wrap">3</div>
+    <div class="item2 wrap">4</div>
+    <div class="item2 wrap">5</div>
+  </div>
+</div>
+
+<div class="ex">
+  <br/>align-content: space-between (default) (items have no height width 25%)</div>
+<div class="ex">
+  <div id="flexcont20" class="flex tall">
+    <div class="item2 wrap">1</div>
+    <div class="item2 wrap">2</div>
+    <div class="item2 wrap">3</div>
+    <div class="item2 wrap">4</div>
+    <div class="item2 wrap">5</div>
+  </div>
+</div>
+
+<div class="ex">
+  <br/>align-content: space-around (default) (items have no height width 25%)</div>
+<div class="ex">
+  <div id="flexcont21" class="flex tall">
+    <div class="item2 wrap">1</div>
+    <div class="item2 wrap">2</div>
+    <div class="item2 wrap">3</div>
+    <div class="item2 wrap">4</div>
+    <div class="item2 wrap">5</div>
+  </div>
+</div>
+
+<div class="ex">NOTE - What happens when display flex-direction is changed to column is that it altenates
+  x and y axies
+  <br/>align-content: space-around (default) (items height 25% width 25%)</div>
+<div class="ex">
+  <div id="flexcont22" class="flex tall col">
+    <div class="item2 wrap coli">1</div>
+    <div class="item2 wrap coli">2</div>
+    <div class="item2 wrap coli">3</div>
+    <div class="item2 wrap coli ">4</div>
+    <div class="item2 wrap coli">5<div>
+  </div>
+</div>
+</div>
+
+  <div class="ex">NOTE - What happens when display flex-direction is changed to column is that it altenates
+    x and y axies
+    <br/>align-content: flex-end (default) (items height 25% width 25%)</div>
+  <div class="ex">
+    <div id="flexcont23" class="flex tall col">
+      <div class="item2 wrap coli">1</div>
+      <div class="item2 wrap coli">2</div>
+      <div class="item2 wrap coli">3</div>
+      <div class="item2 wrap coli ">4</div>
+      <div class="item2 wrap coli">5<div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="ex">CHILDREN ATTRIBUTES
+  <br>grouping al ungrouped items will occur first and then the order of individual
+  order item will be grouped as expected
+
+  <br/>align-content: flex-end (default) (items height 25% width 25%)</div>
+<div class="ex">
+  <div id="flexcont24" class="flex tall col">
+    <div class="item2 wrap coli">1</div>
+    <div class="item2 wrap coli">2</div>
+    <div class="item2 wrap coli">3</div>
+    <div class="item2 wrap coli ">4</div>
+    <div class="item2 wrap coli">5<div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
