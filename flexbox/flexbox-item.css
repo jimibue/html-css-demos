@@ -1,0 +1,101 @@
+.flex{
+    display:flex;
+    border:1px solid #f06292;
+    padding:6px;
+}
+.tall{
+    height:300px
+}
+.col{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.ex{
+    text-align: center;
+    margin: 10px;
+}
+#flexcont1{
+
+}
+
+.item1{
+    height:50px;
+    background-color: #006064;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+.item2{
+    /*height:50px;*/
+    background-color: #006064;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+
+.item1:nth-child(1){
+    order: 1;
+}
+
+#flexcont2 > .item2:nth-child(1){
+    flex-grow: 1;
+}
+#flexcont3 > .item2:nth-child(2){
+    flex-grow: 2;
+}
+#flexcont3 > .item2:nth-child(1){
+    flex-grow: 1;
+}
+#flexcont3 > .item2:nth-child(3){
+    flex-grow: 3;
+}
+#flexcont3 > .item2:nth-child(4){
+    flex-grow: 4;
+}
+#flexcont3 > .item2:nth-child(5){
+    flex-grow: 5;
+}
+#flexcont4 > .item2:nth-child(1){
+    flex-shrink: 2;
+}
+#flexcont5 > .item2:nth-child(1){
+    flex-shrink: 3;
+}
+#flexcont5 > .item1:nth-child(2){
+    flex-shrink: 4;
+}
+
+#flexcont6 > .item2:nth-child(2){
+    flex-basis: 80px;
+}
+#flexcont7 > .item2:nth-child(2){
+    flex-basis: 10px;
+}
+#flexcont7{
+    flex-direction: column;
+}
+#flexcont8 > .item2:nth-child(1){
+    flex:2 2 10%
+}
+#flexcont9> .item2:nth-child(1){
+    align-self: flex-end;
+}
+
+.big{
+    width:30%;
+    height: 80px;
+}
+
+.mid{
+    width:10%;
+}
+.wrap{
+    width:25%;
+}
+.coli{height: 25%}
+
+#font{
+   font-size:  80px;
+}

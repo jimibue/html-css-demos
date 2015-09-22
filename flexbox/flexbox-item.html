@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="flexbox-item.css"/>
+</head>
+<body>
+<!--order tells where to go af-->
+<div class="ex">order tells where to go after items that have not been given an assigned order
+  .item1:nth-child(1){
+  order: 1;
+  }..notice how it is pushed to the back.  THink about order more in groups than actual position</div>
+<div id="flexcont1" class="flex">
+  <div class="item1">1</div>
+  <div class="item1">2</div>
+  <div class="item1">3</div>
+  <div class="item1">4</div>
+  <div class="item1 i1">5</div>
+</div>
+
+<div class="ex">FLEX-GROW:  can control ratio of how much something grows. here item-1 has flex-grow:1 while
+all others have no width, so item 1 takes up as much room as it can</div>
+<div id="flexcont2" class="flex">
+  <div class="item2">1</div>
+  <div class="item2">2</div>
+  <div class="item2">3</div>
+  <div class="item2">4</div>
+  <div class="item2 i1">5</div>
+</div>
+
+<div class="ex">Here each item has a flex-grow:i where is the element number (1,2,3,4,5)</div>
+<div id="flexcont3" class="flex">
+  <div class="item2">1</div>
+  <div class="item2">2</div>
+  <div class="item2">3</div>
+  <div class="item2">4</div>
+  <div class="item2 i1">5</div>
+</div>
+
+<div class="ex">Flex Shrink- tells am item how much to shrink.  Note here though that the item doesn't shrink
+because there is enough room for all of the items.  item1: flex-shrink:3</div>
+<div id="flexcont4" class="flex">
+  <div class="item2">1</div>
+  <div class="item2">2</div>
+  <div class="item2">3</div>
+  <div class="item2">4</div>
+  <div class="item2 i1">5</div>
+</div>
+
+
+<div class="ex">Flex Shrink- tells am item how much to shrink.  Note here though that the item doesn't shrink
+  because there is enough room for all of the items.  item1: flex-shrink:3</div>
+<div id="flexcont5" class="flex">
+  <div class="item2 big">1</div>
+  <div class="item1 big">2</div>
+  <div class="item1 big">3</div>
+  <div class="item1 big">4</div>
+  <div class="item1 big">5</div>
+</div>
+
+<div class="ex">Flex Basis- can tell element its size (width if it is a row element height if it is column element)
+item2 flex-basis:80px</div>
+<div id="flexcont6" class="flex">
+  <div class="item2 big">1</div>
+  <div class="item2 big">2</div>
+  <div class="item2 big">3</div>
+  <div class="item2 big">4</div>
+  <div class="item2 big">5</div>
+</div>
+
+<div class="ex">
+  item2 flex-basis:10px</div>
+<div id="flexcont7" class="flex tall">
+  <div class="item2 big">1</div>
+  <div class="item2 big">2</div>
+  <div class="item2 big">3</div>
+  <div class="item2 big">4</div>
+  <div class="item2 big">5</div>
+</div>
+
+<div class="ex">
+  short hand /* Three values: flex-grow | flex-shrink | flex-basis */
+  item1 flex: 2 2 40;</div>
+<div id="flexcont8" class="flex tall">
+  <div class="item2 ">1</div>
+  <div class="item2 ">2</div>
+  <div class="item2 ">3</div>
+  <div class="item2 ">4</div>
+  <div class="item2 ">5</div>
+</div>
+
+<div class="ex">
+  Align-Self:  item1 align-self:flex-end</div>
+<div id="flexcont9" class="flex tall">
+  <div class="item2 big">1</div>
+  <div class="item2 big">2</div>
+  <div class="item2 big">3</div>
+  <div class="item2 big">4</div>
+  <div class="item2 big">5</div>
+</div>
+
+
+
+</body>
+</html>
