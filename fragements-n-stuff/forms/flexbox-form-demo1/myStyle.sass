@@ -1,1 +1,111 @@
 @import reset
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300)
+
+$input-bg-color: #00ffee
+$input-label-bg-color: #00ffc0
+$base-font-size: 20px
+$g-font: 'Source Sans Pro'
+
+@function em($px, $base:$base-font-size)
+  @return $px/$base *1em
+*
+  font-family: 'Source Sans Pro',serif
+//
+html
+  font-size: $base-font-size
+  background-color: #222
+textarea:focus, input:focus //get rid of default border
+  outline: 0
+
+//
+.body
+  font-family: 'Source Sans Pro',serif
+.container
+  background-color: #333
+  font-family: 'Source Sans Pro',serif !important
+  padding: 20px 0
+  border-radius: 20px
+  margin: auto
+  width: 90%
+  @media screen and (max-width: 500px)  //small
+    width: 100%
+  @media screen and (min-width: 960px) //large
+    width: 80%
+
+  //-> 1 Level
+  .InputAddOn
+
+    display: flex
+    justify-content: center
+    margin: em(20px) em(10px)
+    @media screen and (max-width: 500px)  //small
+      margin: em(10px) em(10px)
+
+  .InputAddOn-field
+    background-color: $input-bg-color
+    border: em(2px) solid $input-bg-color
+    height: em(40px)
+    flex: 1
+    font-size: em(26px) !important //change the size of input field
+    max-width: em(300px)
+    @media screen and (max-width: 500px)  //small
+      font-size: em(20px) !important
+      padding: 0
+    @media screen and (min-width: 960px) //large
+      font-size: em(30px) !important
+  .InputAddOn-field:focus
+    background-color: antiquewhite
+    border: em(5px) solid $input-bg-color
+
+  .InputAddOn-item
+    width: em(120px)
+    background-color: $input-label-bg-color
+    border: em(2px) solid $input-label-bg-color
+    border-right: 1px solid grey
+    font-size: em(24px)
+    padding: 0 em(10px)
+    display: flex
+    align-items: center
+    justify-content: center
+    @media screen and (max-width: 500px)  //small
+      width: em(100px)
+      font-size: em(18px)
+      padding: 0
+    @media screen and (min-width: 960px) //large
+      font-size: em(26px)
+
+  .InputAddOn-submit
+    margin-top: em(28px)
+    max-width: em(420px)
+    display: flex
+    flex: 1
+    justify-content: center
+    font-size: em(30px)
+    border: em(2px) solid #ca81d6
+    height: em(60px)
+    border-radius: em(10px)
+    background-color: #ca8176
+  //<-back to 0
+  .right
+    border-radius: 0 em(10px) em(10px) 0
+  .left
+    border-radius: em(10px) 0 0 em(10px)
+  .flexspace
+    width: em(20px)
+
+
+//
+h1
+  padding-bottom: 20px
+  padding-top: 20px
+  font-family: 'Source Sans Pro',serif
+  font-size: em(40px)
+  text-align: center
+  color: white
+  //small
+  @media screen and (max-width: 500px)
+    font-size: em(35px)
+  //large
+  @media screen and (min-width: 960px)
+    font-size: em(50px)
+
