@@ -13,7 +13,7 @@ $g-font: 'Source Sans Pro'
 //
 html
   font-size: $base-font-size
-  background-color: #222
+  background-color: #333
 textarea:focus, input:focus //get rid of default border
   outline: 0
 
@@ -25,16 +25,53 @@ textarea:focus, input:focus //get rid of default border
   display: flex
   flex-direction: column
   align-items: center
-  justify-content: center
+  align-content: space-between
+  //justify-content: center
   width: 100%
   height: 100vh
+  border: 3px solid white
 #img
   width: 50%
   height: 50%
-  background-color: #006600
+  background-color: #72d572
+  @media screen and (max-width: 500px)  //small
+    width: 75%
+    height: 35%
+
 
 
 //sign Up Form
+#signUp
+  display: none
+  position: absolute
+  width: 100%
+  height: 100vh
+  top: 0
+.close
+  position: absolute
+  top: 15px
+  right: 15px
+  color: white
+#btn-container
+  width: 50%
+
+  display: flex
+  flex-direction: row
+  //flex: 1
+  justify-content: center
+
+button
+
+  max-width: em(420px)
+
+  flex: 1
+  justify-content: center
+  font-size: em(20px)
+  border: em(2px) solid #ca81d6
+  height: em(50px)
+  border-radius: em(10px)
+  background-color: #ca8176
+
 .container
   background-color: #333
   font-family: 'Source Sans Pro',serif !important

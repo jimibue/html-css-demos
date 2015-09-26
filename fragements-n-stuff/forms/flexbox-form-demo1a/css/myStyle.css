@@ -37,7 +37,7 @@ table {
 
 html {
   font-size: 20px;
-  background-color: #222; }
+  background-color: #333; }
 
 textarea:focus, input:focus {
   outline: 0; }
@@ -59,17 +59,66 @@ textarea:focus, input:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  border: 3px solid white; }
 
 #img {
   width: 50%;
   height: 50%;
-  background-color: #006600; }
+  background-color: #72d572; }
+  @media screen and (max-width: 500px) {
+    #img {
+      width: 75%;
+      height: 35%; } }
+
+#signUp {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0; }
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white; }
+
+#btn-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+button {
+  max-width: 21em;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1em;
+  border: 0.1em solid #ca81d6;
+  height: 2.5em;
+  border-radius: 0.5em;
+  background-color: #ca8176; }
 
 .container {
   background-color: #333;
