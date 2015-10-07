@@ -110,7 +110,97 @@ nav.main-nav {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
     .info-grid .box-container .box {
+      box-sizing: border-box;
       min-width: 200px;
-      max-width: 400px;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
       height: 300px;
       border: 1px solid #222222; }
+
+.info-grida {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .info-grida .picture-desc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .info-grida img {
+    -webkit-box-flex: 5;
+    -webkit-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    height: 250px;
+    border: 1px solid #222222;
+    padding: 30px; }
+  .info-grida span {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    justify-self: center;
+    text-align: center; }
+  .info-grida .desc {
+    box-sizing: border-box;
+    -webkit-box-flex: 5;
+    -webkit-flex: 5 1;
+        -ms-flex: 5 1;
+            flex: 5 1;
+    padding: 30px;
+    border: 1px solid #222222; }
+
+footer {
+  margin-top: 20px;
+  height: 300px;
+  background-color: #666;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+  footer nav {
+    padding: 40px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 1px solid white; }
+  footer .company-info {
+    padding: 40px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
