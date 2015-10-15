@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+  <style>
+    body * {
+      background-color: #006064;
+      margin: 10px;
+
+    }
+    header{
+      width: 100%;
+      height: 50px;
+    }
+    section{
+      height: 500px;
+      width: 70%;
+      float: left;
+    }
+    aside{
+      float: right;
+      height: 500px;
+      width: 20%
+
+    }
+    footer{
+      width: 100%;
+      height: 50px;
+      clear: both;
+      /*position: fixed;*/
+      /*bottom: 0;*/
+
+    }
+    .grid{
+      background: #199;
+      margin: 5px auto;
+      width: 960px;
+    }
+    .col-1-3{
+      display: inline-block;
+      background: #444;
+      width:30%;
+    }
+
+    /*
+  ========================================
+  Clearfix
+  ========================================
+*/
+    .group:before,
+    .group:after {
+      content: "";
+      display: table;
+    }
+    .group:after {
+      clear: both;
+    }
+    .group {
+      background: #999;
+      clear: both;
+      *zoom: 1;
+    }
+
+  </style>
+</head>
+
+
+<header></header>
+<section></section>
+<aside></aside>
+<div class="groups">
+<section class="grid">
+
+  <section class="col-1-3">
+    ...
+  </section><section class="col-1-3">
+    ...
+  </section><section class="col-1-3">
+    ...
+  </section>
+
+</section>
+</div>
+<footer></footer>
+</body>
+</html>
