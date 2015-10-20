@@ -3,6 +3,62 @@
 @import '2-modules/modules-dir';
 @import '3-layouts/layouts-dir';
 
+
+
 body{
-  background: #222;;
+  background: #777;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  @include linear-gradient(to top, #777, orange);
+
+
+  @include border-width(1em 20px null 100%);
+
+}
+
+@include keyframes(fadeIn) {
+  from {
+    @include transform(translateY(-100px));
+    opacity: 0;
+  }
+  to {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+}
+
+// Animation mixin
+
+@mixin animation--fadedown($delay) {
+  @include animation(fadeIn 2s ease-in-out);
+  @include animation-iteration-count(1);
+  @include animation-fill-mode(forwards);
+  @include animation-delay(#{$delay}s);
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background: #234;
+  @include animation--fadedown(2)
+}
+// Nav item selector
+
+
+button {
+  //@include button(pill);
+}
+#{$all-buttons} {
+  background-color: #f00;
+}
+
+#{$all-buttons-focus},
+#{$all-buttons-hover} {
+  background-color: #0f0;
+}
+
+#{$all-buttons-active} {
+  background-color: #00f;
 }

@@ -1,0 +1,26 @@
+to start sass watching with terminal
+sass --watch basic.scss:basic.css
+
+
+mixins
+@mixin name($value: default-value){
+    attr: $value
+}
+
+@include name()
+
+extend
+@extend element name
+
+parent refernce
+ a{
+    &:hover{
+
+    }
+ }
+
+ lists in sass
+ $list-name
+
+
+ functions in sass

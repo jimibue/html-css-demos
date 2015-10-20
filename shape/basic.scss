@@ -1,0 +1,49 @@
+
+@import 'mixins/shapes';
+@import 'mixins/images';
+
+$light-grey: #888;
+$tl: #999;
+$down:#632;
+$up:#182;
+$tr: #333;
+
+
+@mixin border-radius($radius: 5px, $color: $light-grey){
+  border: $radius solid $light-grey;
+}
+
+@function text-contrast($background, $value){
+  @return $background + $value
+}
+nav{
+ margin-top:200px;
+}
+div{
+  display: inline;
+}
+
+.topleft{
+    position: relative;
+   @include triangle(100px,topleft, $tl);
+  span{
+    position: absolute;
+    top: -100px;
+  }
+  &:hover{
+    background-color: red;
+  }
+
+ }
+.down {
+
+    @include triangle(100px,down, $down);
+}
+.up{
+  @include triangle(100px,up, $up);
+}
+.topright{
+  @include triangle(100px, topright, $tr);
+}
+
+

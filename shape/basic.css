@@ -1,0 +1,39 @@
+nav {
+  margin-top: 200px; }
+
+div {
+  display: inline; }
+
+.topleft {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #999;
+  border-right: 100px solid transparent; }
+  .topleft span {
+    position: absolute;
+    top: -100px; }
+  .topleft:hover {
+    background-color: red; }
+
+.down {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #632; }
+
+.up {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid #182; }
+
+.topright {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #333;
+  border-left: 100px solid transparent; }
+
+/*# sourceMappingURL=basic.css.map */

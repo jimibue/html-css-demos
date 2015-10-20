@@ -1,0 +1,9 @@
+@mixin background($imgsrc, $pos:0 0, $repeat:no-reapeat){
+  background: {
+    image:url($imgsrc);
+    position: $pos;
+    repeat: $repeat;
+
+  }
+
+}

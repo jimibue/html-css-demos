@@ -539,6 +539,72 @@ picture {
   max-width: 100%; }
 
 body {
-  background: #222; }
+  background: #777; }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #777;
+  background-image: -webkit-linear-gradient(bottom, #777, orange);
+  background-image: linear-gradient(to top,#777, orange);
+  border-top-width: 1em;
+  border-right-width: 20px;
+  border-left-width: 100%; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    -webkit-transform: translateY(-100px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0);
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  from {
+    -moz-transform: translateY(-100px);
+    opacity: 0; }
+  to {
+    -moz-transform: translateY(0);
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+    transform: translateY(-100px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+.box {
+  width: 100px;
+  height: 100px;
+  background: #234;
+  -webkit-animation: fadeIn 2s ease-in-out;
+  -moz-animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: #f00; }
+
+button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus,
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: #0f0; }
+
+button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+  background-color: #00f; }
 
 /*# sourceMappingURL=style.css.map */

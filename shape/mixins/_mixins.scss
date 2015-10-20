@@ -1,0 +1,24 @@
+//These 8 mixins taken from the tutorial
+//http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+
+//1 Set rem font-size with pixel fallback
+@function calculateRem($size){
+  $remSize: size /16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
